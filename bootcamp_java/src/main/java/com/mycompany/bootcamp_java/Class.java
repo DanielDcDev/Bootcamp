@@ -17,6 +17,7 @@ public class Class {
             System.out.println("O cachorro esta"+dog1.interate("carinho"));
             System.out.println("O cachorro esta"+dog1.interate("nada"));
             System.out.println("O cachorro esta"+dog1.interate("vai dormir"));
+            System.out.println("O cachorro esta"+dog1.interate("pisar na batinha"));
             System.out.println("The dog catch something /n this is"+dog1.Pegar());
 }
 }
