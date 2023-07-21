@@ -4,13 +4,70 @@ package Dog;
 
 
 public class Dogs {
-    public  String nome;
-    public String cor;
-    public String estadoEspirito;
-    public int altura;
-    public int sizeRabo;
-    public double peso;
+    private  String nome;
+    private String cor;
+    private String estadoEspirito;
+    private int altura;
+    private int sizeRabo;
+    private double peso;
      
+    public Dogs(String nome, String cor, int altura, int sizeRabo, double peso){
+        this.nome = nome;
+        this.cor = cor;
+        this.altura = altura;
+    }
+    
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        if(nome.equals("Lilly")){
+            this.nome = null;
+            }
+        this.nome = nome;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getEstadoEspirito() {
+        return estadoEspirito;
+    }
+
+    public void setEstadoEspirito(String estadoEspirito) {
+        this.estadoEspirito = estadoEspirito;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getSizeRabo() {
+        return sizeRabo;
+    }
+
+    public void setSizeRabo(int sizeRabo) {
+        this.sizeRabo = sizeRabo;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
         public void Comer(){}
         public void Latir(){
             System.out.println("NOXUS!!!");
@@ -23,11 +80,16 @@ public class Dogs {
             switch(action){
                 case "carinho":
                     this.estadoEspirito = "feliz";
+                    break;
                 case "vai dormir":
                     this.estadoEspirito = "Bravo";
+                    break;
                 case "pisar na batinha":
                     this.estadoEspirito = "triste";
-                default: this.estadoEspirito= "neutro";
+                    break;
+                default: 
+                    this.estadoEspirito= "neutro";
+                    break;
                 
                 }
         //if (action.equals("carinho")){

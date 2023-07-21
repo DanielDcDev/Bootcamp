@@ -5,11 +5,11 @@ public class Class {
     public static void main(String[] args) {
         Dogs dog1 = new Dogs();
         
-        dog1.nome = "Darius";
-        dog1.cor = "Preto e vermelho";
-        dog1.altura = 50;
-        dog1.peso = 10.01;
-        dog1.sizeRabo = 30;
+        dog1.setNome("Darius");
+        dog1.setCor("Preto e vermelho");
+        dog1.setAltura(50);
+        dog1.setPeso(10.01);
+        dog1.setSizeRabo(30=;
             
                 
             //System.out.println(dog1.nome);
